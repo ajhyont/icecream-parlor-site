@@ -6,8 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
+    <Router>      
       <Routes>
         <Route path="/" exact Component={Home} />
       </Routes>
