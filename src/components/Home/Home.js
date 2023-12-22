@@ -28,7 +28,7 @@ const Home = ()=>{
     );
   },[]);
   return(
-    <div style={{ position:'relative',height:'88888vh' }}>
+    <div style={{ position:'relative',height:'8888vh' }}>
       <Navbar />
       <img ref={backgroundRef} src={backgroundImg} alt="Background" className="background-image"/>
         {/* // style={{ width:'100%',height:'95vh',objectFit:'cover',position:'absolute',top:'50px',left:0 }}  */}
