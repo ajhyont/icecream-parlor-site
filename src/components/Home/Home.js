@@ -5,27 +5,37 @@ import night from './image_cropped_16_9.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Navbar from "../Navbar/Navbar";
+import './Home.css';
 
 const Home = ()=>{
   
+  const backgroundRef = useRef(null);
   const nightRef = useRef(null);
   useEffect(()=>{
     gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.defaults({ markers:true });
-    gsap.to(nightRef.current,{ 
-      scrollTrigger: { trigger:nightRef.current,start:'top top',end:'bottom bottom',scrub:8, },
-      opacity:1,
-    });
+    gsap.to(backgroundRef.current,{
+      scrollTrigger:{ trigger: backgroundRef.current, start:'top+=888 top',end:'bottom bottom',scrub:1,markers:true },
+      x:'-100vw',
+      y:'0',
+      ease:'none'
+    });    
+    gsap.fromTo(nightRef.current,
+      { x:'100vw' },
+      {
+        scrollTrigger: { trigger:nightRef.current,start:'top top',end:'bottom bottom',scrub:true, },
+        x:'100vw',
+      }
+    );
   },[]);
   return(
-    <div style={{ position:'relative',height:'190vh' }}>
+    <div style={{ position:'relative',height:'88888vh' }}>
       <Navbar />
-      <img src={backgroundImg} alt="Background" 
-        style={{ width:'100%',height:'95vh',objectFit:'cover',position:'absolute',top:'50px',left:0,zIndex:0 }} />
+      <img ref={backgroundRef} src={backgroundImg} alt="Background" className="background-image"/>
+        {/* // style={{ width:'100%',height:'95vh',objectFit:'cover',position:'absolute',top:'50px',left:0 }}  */}
       {/* <img src={m2} alt="Background" style={{ width:'100%',height:'95vh',objectFit:'cover',position:'absolute',top:0,left:0 }} /> */}
       {/* <img ref={mascotRef} src={mascotImg} alt="Mascot" style={{ width:'100px',position:'absolute' }} /> */}
       <img ref={nightRef} src={night} alt="Background" 
-        style={{ width:'100%',height:'95vh',objectFit:'cover',position:'absolute',top:'50px',left:0,zIndex:1,opacity:0, }} />
+        style={{ width:'100%',height:'95vh',objectFit:'cover',position:'absolute',top:'50px',left:0}} />
     </div>
   );
 
