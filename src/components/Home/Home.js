@@ -25,8 +25,8 @@ const Home = ()=>{
 
       const nightToDelivery_Tl = gsap.timeline( {scrollTrigger: {trigger:nightRef.current,start:'top+=1778 top',end:'bottom bottom',scrub:1.2,markers:true},toggleActions: 'play reverse play reverse',} );
       nightToDelivery_Tl
-        .to(nightRef.current, {x:'-100vw'} )
-        .fromTo(deliveryRef.current, {x:'100vw'},{x:'0'} );
+        .fromTo(nightRef.current, {x:'0',zIndex:'0'},{x:'-100vw',zIndex:'-1'} )
+        .fromTo(deliveryRef.current, {x:'100vw',zIndex:'-1'},{x:'0',zIndex:'0'} );
     // gsap.to(backgroundRef.current,{
     //   scrollTrigger:{ trigger: backgroundRef.current, start:'top+=888 top',end:'bottom bottom',scrub:3,markers:true },
     //   x:'-100vw',y:'0',ease:'none'
