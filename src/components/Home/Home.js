@@ -16,16 +16,16 @@ const Home = ()=>{
   useEffect(()=>{
     gsap.registerPlugin(ScrollTrigger);
     gsap.set(backgroundRef.current, {scale:28, transformOrigin:'37% 1%'} );
-    const zoomOut_Tl=gsap.timeline( {scrollTrigger: {trigger:nightRef.current,start:'top+=10 top',end:'bottom bottom',scrub:1,markers:true},} );
+    const zoomOut_Tl=gsap.timeline( {scrollTrigger: {trigger:nightRef.current,start:'top+=10 top',end:'bottom bottom',scrub:1,markers:true,toggleActions: 'play reverse play reverse',},} );
     zoomOut_Tl.to(backgroundRef.current, {scale:1,ease:'none'} );
-    const backgroundToNight_Tl = gsap.timeline( {scrollTrigger: {trigger:nightRef.current,start:'top+=888 top',end:'bottom bottom',scrub:1.2,markers:true},} );
+    const backgroundToNight_Tl = gsap.timeline( {scrollTrigger: {trigger:nightRef.current,start:'top+=888 top',end:'bottom bottom',scrub:1.2,markers:true},toggleActions: 'play reverse play reverse',} );
     backgroundToNight_Tl      
-      .to(backgroundRef.current, {x:'-66vw'} )
-      .fromTo(nightRef.current, {x:'100vw'},{x:'0'},);
+      .fromTo(backgroundRef.current, {x:'0',zIndex:'0'},{x:'-100vw',zIndex:'-1'} )
+      .fromTo(nightRef.current, {x:'100vw',zIndex:'-1'},{x:'0',zIndex:'0'},);
 
-      const nightToDelivery_Tl = gsap.timeline( {scrollTrigger: {trigger:nightRef.current,start:'top+=1778 top',end:'bottom bottom',scrub:1.2,markers:true},} );
+      const nightToDelivery_Tl = gsap.timeline( {scrollTrigger: {trigger:nightRef.current,start:'top+=1778 top',end:'bottom bottom',scrub:1.2,markers:true},toggleActions: 'play reverse play reverse',} );
       nightToDelivery_Tl
-        .to(nightRef.current, {x:'-66vw'} )
+        .to(nightRef.current, {x:'-100vw'} )
         .fromTo(deliveryRef.current, {x:'100vw'},{x:'0'} );
     // gsap.to(backgroundRef.current,{
     //   scrollTrigger:{ trigger: backgroundRef.current, start:'top+=888 top',end:'bottom bottom',scrub:3,markers:true },
