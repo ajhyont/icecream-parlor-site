@@ -7,7 +7,7 @@ function Navbar(){
   return(
     <nav className="navbar">      
         <Link to="/" style={linkStyle}>Home</Link>
-        <Link to="/about-us" style={linkStyle}>About Us</Link>
+        <Link to="/aboutUs" style={linkStyle}>About Us</Link>
         <Link to="/contact" style={linkStyle}>Contact</Link>      
     </nav>
   );
