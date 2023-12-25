@@ -12,3 +12,26 @@
   width:100vw; display: block; object-fit: cover; background-size: cover; 
   margin-top: 300vh; top:33px; position: sticky;
 }
+
+.tail{
+  width:100vw; display: block; object-fit: cover; background-size: cover; 
+  margin-top: 300vh; top:33px; position: sticky;
+}
+
+.store{
+  z-index: 1; position: sticky; width:8vw; top:800px;left: 8vw; margin-top: 300vh;
+}
+
+.mascotLastImg{
+  z-index: 1; position: sticky; width:5vw; top:840px;left: 15vw; margin-top: 300vh;
+}
+
+.icecream_snow{
+  width:100vw; display: block; object-fit: cover; background-size: cover; 
+  margin-top: 300vh; top:33px; position: sticky;
+}
+
+.banner{
+  width:34vw; display: block; object-fit: cover; background-size: cover; 
+  margin-top: 10vh; top:65vh;left:38vw; position: sticky;
+}
