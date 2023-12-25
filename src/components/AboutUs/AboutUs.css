@@ -1,6 +1,6 @@
 .backgroundImg{
   width:100vw; display: block; object-fit: cover; background-size: cover;   
-  margin-top: 50vh; top:33px; position: sticky;
+  top:33px; position: sticky;
 }
 
 .night{
