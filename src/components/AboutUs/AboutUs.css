@@ -4,43 +4,43 @@
 }
 
 .mascotBike{
-  z-index: 1; position: sticky; width:5vw; top:840px;left: 38vw; margin-top: 120vh;
+  z-index: 1; position: sticky; width:5vw; top:840px;left: 38vw; margin-top: 1vh;
 }
 
 .night{
   width:100vw; display: block; object-fit: cover; background-size: cover; 
-  margin-top: 600vh; top:50px; position: sticky;
+  margin-top: 4vh; top:-100px; position: sticky;
 }
 
 .thirdImg{
   width:100vw; display: block; object-fit: cover; background-size: cover; 
-  margin-top: 300vh; top:-150px; position: sticky;
+  margin-top: 4vh; top:-150px; position: sticky;
 }
 
 .delivery{
   width:100vw; display: block; object-fit: cover; background-size: cover; 
-  margin-top: 300vh; top:50px; position: sticky;
+  margin-top: 4vh; top:50px; position: sticky;
 }
 
 .tail{
   width:100vw; display: block; object-fit: cover; background-size: cover; 
-  margin-top: 300vh; top:50px; position: sticky;
+  margin-top: 4vh; top:-140px; position: sticky;
 }
 
 .store{
-  z-index: 1; position: sticky; width:8vw; top:800px;left: 8vw; margin-top: 120vh;
+  z-index: 1; position: sticky; width:8vw; top:800px;left: 8vw; margin-top: 4vh;
 }
 
 .mascotLastImg{
-  z-index: 1; position: sticky; width:5vw; top:840px;left: 15vw; margin-top: 120vh;
+  z-index: 1; position: sticky; width:5vw; top:840px;left: 15vw; margin-top: 1vh;
 }
 
 .icecream_snow{
   width:100vw; display: block; object-fit: cover; background-size: cover; 
-  margin-top: 300vh; top:50px; position: sticky;
+  margin-top: 1vh; top:0; position: sticky;
 }
 
 .banner{
   width:34vw; display: block; object-fit: cover; background-size: cover; 
-  margin-top: 10vh; top:65vh;left:38vw; position: sticky;
+  margin-top: 0.2vh; top:65vh;left:38vw; position: sticky;
 }
