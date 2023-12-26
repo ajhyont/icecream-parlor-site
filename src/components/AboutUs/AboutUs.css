@@ -4,12 +4,17 @@
 }
 
 .mascotBike{
-  z-index: 1; position: sticky; width:5vw; top:840px;left: 38vw; margin-top: 100vh;
+  z-index: 1; position: sticky; width:5vw; top:840px;left: 38vw; margin-top: 120vh;
 }
 
 .night{
   width:100vw; display: block; object-fit: cover; background-size: cover; 
-  margin-top: 900vh; top:50px; position: sticky;
+  margin-top: 600vh; top:50px; position: sticky;
+}
+
+.thirdImg{
+  width:100vw; display: block; object-fit: cover; background-size: cover; 
+  margin-top: 300vh; top:-150px; position: sticky;
 }
 
 .delivery{
@@ -23,11 +28,11 @@
 }
 
 .store{
-  z-index: 1; position: sticky; width:8vw; top:800px;left: 8vw; margin-top: 300vh;
+  z-index: 1; position: sticky; width:8vw; top:800px;left: 8vw; margin-top: 120vh;
 }
 
 .mascotLastImg{
-  z-index: 1; position: sticky; width:5vw; top:840px;left: 15vw; margin-top: 300vh;
+  z-index: 1; position: sticky; width:5vw; top:840px;left: 15vw; margin-top: 120vh;
 }
 
 .icecream_snow{

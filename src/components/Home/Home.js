@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from "react";
 import backgroundImg from './foundation_img_home_page.png';
-import mascotImg from './mascot_bike.png';
+// import mascotImg from './mascot_bike.png';
 import night from './image_cropped_16_9.png';
 import deliveryImg from './delivery.png';
 import { gsap } from 'gsap';
