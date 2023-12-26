@@ -1,21 +1,25 @@
 .backgroundImg{
   width:100vw; display: block; object-fit: cover; background-size: cover;   
-  top:33px; position: sticky;
+  top:50px; position: sticky;
+}
+
+.mascotBike{
+  z-index: 1; position: sticky; width:5vw; top:840px;left: 38vw; margin-top: 100vh;
 }
 
 .night{
   width:100vw; display: block; object-fit: cover; background-size: cover; 
-  margin-top: 300vh; top:33px; position: sticky;
+  margin-top: 900vh; top:50px; position: sticky;
 }
 
 .delivery{
   width:100vw; display: block; object-fit: cover; background-size: cover; 
-  margin-top: 300vh; top:33px; position: sticky;
+  margin-top: 300vh; top:50px; position: sticky;
 }
 
 .tail{
   width:100vw; display: block; object-fit: cover; background-size: cover; 
-  margin-top: 300vh; top:33px; position: sticky;
+  margin-top: 300vh; top:50px; position: sticky;
 }
 
 .store{
@@ -28,7 +32,7 @@
 
 .icecream_snow{
   width:100vw; display: block; object-fit: cover; background-size: cover; 
-  margin-top: 300vh; top:33px; position: sticky;
+  margin-top: 300vh; top:50px; position: sticky;
 }
 
 .banner{

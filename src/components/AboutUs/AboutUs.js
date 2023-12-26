@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "../Navbar/Navbar";
 import backgroundImg from '../Home/foundation_img_home_page.png';
+import mascotBike from '../Home/mascot_bike.png';
 import night from '../Home/image_cropped_16_9.png';
 import delivery from '../Home/delivery.png';
 import tailImg from '../Home/foundation_img_home_page.png';
@@ -23,7 +24,12 @@ const AboutUs=()=>{
   const storeRef=useRef(null);
   const icecream_snowRef=useRef(null);
   useEffect(()=>{
-    gsap.registerPlugin(ScrollTrigger);    
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.set(backgroundRef.current, {scale:24.5,transformOrigin:'36.81% 10.4%'} );
+    gsap.fromTo(backgroundRef.current,
+      { scale:24.5,transformOrigin:'36.81% 10.4%' },
+      { scale:1,ease:'none',scrollTrigger:{trigger:backgroundRef.current,start:'top top',end:'top center',scrub:1,markers:true} }
+    );
     // gsap.fromTo(backgroundRef.current,
     //   {x:'100vw'},{  x:'0',scrollTrigger:{trigger:backgroundRef.current,start:"top+=800 bottom",end:"top top",scrub:1,markers:true}  }
     // );
@@ -33,16 +39,12 @@ const AboutUs=()=>{
     gsap.fromTo(deliveryRef.current,
       {x:'100vw'},{  x:'0',scrollTrigger:{trigger:deliveryRef.current,start:"top+=800 bottom",end:"top top",scrub:1,markers:true}  }
     );
-    // gsap.to(deliveryRef.current,{  scrollTrigger:{trigger:deliveryRef.current,start:"top+=2000 bottom",end:"top top",scrub:1,markers:true}  });    
     gsap.fromTo(tailRef.current,
       {x:'100vw'},{  x:'0',scrollTrigger:{trigger:tailRef.current,start:"top+=1776 bottom",end:"top top",scrub:1,markers:true}  }
     );
     gsap.fromTo([storeRef.current,mascotRef.current],
       {x:'-100vw'},{  x:'0',scrollTrigger:{trigger:storeRef.current,start:"top+=1776 bottom",end:"top top",scrub:1,markers:true}  }
     );    
-    // gsap.fromTo(mascotRef.current,
-    //   {x:'-100vw'},{  x:'0',scrollTrigger:{trigger:mascotRef.current,start:"top+=1776 bottom",end:"top top",scrub:1,markers:true}  }
-    // );
     gsap.fromTo(icecream_snowRef.current,
       {x:'100vw'},{  x:'0',scrollTrigger:{trigger:icecream_snowRef.current,start:"top+=800 bottom",end:"top top",scrub:1,markers:true}  }
     );
@@ -52,6 +54,7 @@ const AboutUs=()=>{
     <div style={{height:'8888vh'}}>
       <Navbar />
       <img ref={backgroundRef} src={backgroundImg} alt="backgroundImg" className="backgroundImg" />
+      <img src={mascotBike} alt="mascotBike" className="mascotBike" />
       <img ref={nightRef} src={night} alt="night" className="night" />
       <img ref={deliveryRef} src={delivery} alt="delivery" className="delivery" />
       <img ref={tailRef} src={tailImg} alt="tailImg" className="tail" />
