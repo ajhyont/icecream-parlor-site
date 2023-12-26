@@ -28,14 +28,11 @@ const AboutUs=()=>{
   const icecream_snowRef=useRef(null);
   useEffect(()=>{
     gsap.registerPlugin(ScrollTrigger);
-    gsap.set(backgroundRef.current, {scale:24.5,transformOrigin:'36.81% 10.4%'} );
+    // gsap.set(backgroundRef.current, {scale:24.5,transformOrigin:'36.81% 10.4%'} );
     gsap.fromTo(backgroundRef.current,
       { scale:24.5,transformOrigin:'36.81% 10.4%' },
       { scale:1,ease:'none',scrollTrigger:{trigger:backgroundRef.current,start:'top top',end:'top center',scrub:1,markers:true} }
     );
-    // gsap.fromTo(backgroundRef.current,
-    //   {x:'100vw'},{  x:'0',scrollTrigger:{trigger:backgroundRef.current,start:"top+=800 bottom",end:"top top",scrub:1,markers:true}  }
-    // );
     gsap.fromTo(mascotBikeRef.current,
       {x:'-100vw'},{  x:'0',scrollTrigger:{trigger:mascotBikeRef.current,start:"top+=800 bottom",end:"top top",scrub:1,markers:true}  }
     );
@@ -75,7 +72,7 @@ const AboutUs=()=>{
       <img ref={mascotRef} src={storeImg} alt="storeImg" className="store" />
       <img ref={storeRef} src={mascotLastImg} alt="mascotLastImg" className="mascotLastImg" />
       <img ref={icecream_snowRef} src={icecream_snow} alt="icecream_snow" className="icecream_snow" />
-      <img src={banner} alt="banner" className="banner" />
+      <a href="/contact"><img src={banner} alt="banner" className="banner" /></a>
     </div>
   );
 
