@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>      
       <Routes>
-        <Route path="/" exact Component={Home} />
+        <Route path="/icecream-parlor-site/" exact Component={Home} />
         <Route path="/aboutUs" exact Component={AboutUs} />
         <Route path="/contact" exact Component={Contact} />
       </Routes>
