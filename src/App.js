@@ -10,8 +10,8 @@ function App() {
     <Router>      
       <Routes>
         <Route path="/icecream-parlor-site/" exact Component={Home} />
-        <Route path="/aboutUs" exact Component={AboutUs} />
-        <Route path="/contact" exact Component={Contact} />
+        <Route path="/icecream-parlor-site/aboutUs" exact Component={AboutUs} />
+        <Route path="/icecream-parlor-site/contact" exact Component={Contact} />
       </Routes>
     </Router>
   );
