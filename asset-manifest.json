@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/icecream-parlor-site/static/css/main.7bc6bd81.css",
-    "main.js": "/icecream-parlor-site/static/js/main.a208ee36.js",
+    "main.css": "/icecream-parlor-site/static/css/main.da958fc8.css",
+    "main.js": "/icecream-parlor-site/static/js/main.77a15557.js",
     "static/js/787.c91f9f59.chunk.js": "/icecream-parlor-site/static/js/787.c91f9f59.chunk.js",
     "static/media/image_cropped_16_9.png": "/icecream-parlor-site/static/media/image_cropped_16_9.b128f4640cbfcd2ef701.png",
+    "static/media/thirdImg.png": "/icecream-parlor-site/static/media/thirdImg.b2939c48651aba02cb4c.png",
     "static/media/foundation_img_home_page.png": "/icecream-parlor-site/static/media/foundation_img_home_page.bbb5083e8fab727ea00b.png",
     "static/media/delivery.png": "/icecream-parlor-site/static/media/delivery.3663450e8d9dac26a209.png",
     "static/media/banner.png": "/icecream-parlor-site/static/media/banner.eb1aa4d4edbf676edfea.png",
@@ -12,12 +13,12 @@
     "static/media/icecream-parlor.png": "/icecream-parlor-site/static/media/icecream-parlor.f539c674c298449e737f.png",
     "static/media/mascot-last-img_inPixio3.png": "/icecream-parlor-site/static/media/mascot-last-img_inPixio3.6379c1e0a73770dd7d34.png",
     "index.html": "/icecream-parlor-site/index.html",
-    "main.7bc6bd81.css.map": "/icecream-parlor-site/static/css/main.7bc6bd81.css.map",
-    "main.a208ee36.js.map": "/icecream-parlor-site/static/js/main.a208ee36.js.map",
+    "main.da958fc8.css.map": "/icecream-parlor-site/static/css/main.da958fc8.css.map",
+    "main.77a15557.js.map": "/icecream-parlor-site/static/js/main.77a15557.js.map",
     "787.c91f9f59.chunk.js.map": "/icecream-parlor-site/static/js/787.c91f9f59.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bc6bd81.css",
-    "static/js/main.a208ee36.js"
+    "static/css/main.da958fc8.css",
+    "static/js/main.77a15557.js"
   ]
 }
