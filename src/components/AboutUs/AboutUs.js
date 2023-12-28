@@ -37,26 +37,26 @@ const AboutUs=()=>{
       {x:'-100vw'},{  x:'0',scrollTrigger:{trigger:mascotBikeRef.current,start:"top bottom",end:"top top",scrub:1,markers:true}  }
     );
     gsap.fromTo(nightRef.current,
-      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:nightRef.current,start:"top top",end:"top top-=188",scrub:1,markers:true}  }
+      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:nightRef.current,start:"top top",end:"top top-=100vh",scrub:1,markers:true}  }
     );
     gsap.fromTo(thirdImgRef.current,
-      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:thirdImgRef.current,start:"top top",end:"top top-=188",scrub:1,markers:true}  }
+      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:thirdImgRef.current,start:"top top",end:"top top-=100vh",scrub:1,markers:true}  }
     );
     gsap.fromTo(mascotBikeRef.current,
       {x:'0'},
-      { x:'100vw',scrollTrigger:{trigger:thirdImgRef.current,start:"top top-=588",end:"bottom+=188 top",scrub:1,markers:true}  }
+      { x:'100vw',scrollTrigger:{trigger:thirdImgRef.current,start:"top top-=300vh",end:"bottom+=100vh top",scrub:1,markers:true}  }
     );
     gsap.fromTo(deliveryRef.current,
-      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:deliveryRef.current,start:"top top",end:"top top-=188",scrub:1,markers:true}  }
+      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:deliveryRef.current,start:"top top",end:"top top-=100vh",scrub:1,markers:true}  }
     );
     gsap.fromTo(tailRef.current,
-      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:tailRef.current,start:"top top",end:"top top-=188",scrub:1,markers:true}  }
+      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:tailRef.current,start:"top top",end:"top top-=100vh",scrub:1,markers:true}  }
     );
     gsap.fromTo([storeRef.current,mascotRef.current],
-      {x:'-100vw'},{  x:'0',scrollTrigger:{trigger:storeRef.current,start:"top top",end:"top top-=188",scrub:1,markers:true}  }
+      {x:'-100vw'},{  x:'0',scrollTrigger:{trigger:storeRef.current,start:"top top",end:"top top-=100vh",scrub:1,markers:true}  }
     );    
     gsap.fromTo(icecream_snowRef.current,
-      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:icecream_snowRef.current,start:"top top",end:"top top-=188",scrub:1,markers:true}  }
+      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:icecream_snowRef.current,start:"top top",end:"top top-=100vh",scrub:1,markers:true}  }
     );
     
   },[]);
@@ -72,7 +72,7 @@ const AboutUs=()=>{
       <img ref={mascotRef} src={storeImg} alt="storeImg" className="store" />
       <img ref={storeRef} src={mascotLastImg} alt="mascotLastImg" className="mascotLastImg" />
       <img ref={icecream_snowRef} src={icecream_snow} alt="icecream_snow" className="icecream_snow" />
-      <a href="/contact"><img src={banner} alt="banner" className="banner" /></a>
+      <a href="/icecream-parlor-site/contact"><img src={banner} alt="banner" className="banner" /></a>
     </div>
   );
 
