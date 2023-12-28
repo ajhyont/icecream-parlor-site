@@ -1,3 +1,11 @@
+/* @media (max-width: 1000px) {
+  .backgroundImg{
+    
+  }
+} */
+
+/* .main-container{ overflow-x: hidden; }  */
+
 .backgroundImg{
   width:100%; display: block; object-fit: cover; background-size: cover;   
   top:50px; position: sticky;

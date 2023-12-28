@@ -1,48 +1,77 @@
-import React, {useEffect, useRef} from "react";
-import backgroundImg from './foundation_img_home_page.png';
-// import mascotImg from './mascot_bike.png';
-import night from './image_cropped_16_9.png';
-import deliveryImg from './delivery.png';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Navbar from "../Navbar/Navbar";
+import React, { useEffect,useRef } from "react";
 import './Home.css';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Navbar from "../Navbar/Navbar";
+import backgroundImg from './foundation_img_home_page.png';
+import mascotBike from './mascot_bike.png';
+import night from './image_cropped_16_9.png';
+import thirdImg from './thirdImg.png';
+import delivery from './delivery.png';
+import tailImg from './foundation_img_home_page.png';
+import storeImg from './icecream-parlor.png';
+import mascotLastImg from './mascot-last-img_inPixio3.png';
+import icecream_snow from './icecream_snow.png';
+import banner from './banner.png';
 
-const Home = ()=>{
-  
+
+const Home=()=>{
+
   const backgroundRef = useRef(null);
+  const mascotBikeRef = useRef(null);
   const nightRef = useRef(null);
-  const deliveryRef = useRef(null);
+  const thirdImgRef = useRef(null);
+  const deliveryRef=useRef(null);
+  const tailRef=useRef(null);
+  const mascotRef=useRef(null);
+  const storeRef=useRef(null);
+  const icecream_snowRef=useRef(null);
   useEffect(()=>{
     gsap.registerPlugin(ScrollTrigger);
-    gsap.set(backgroundRef.current, {scale:28, transformOrigin:'37% 1%'} );
-    const zoomOut_Tl=gsap.timeline( {scrollTrigger: {trigger:nightRef.current,start:'top+=10 top',end:'bottom bottom',scrub:1,markers:true,toggleActions: 'play reverse play reverse',},} );
-    zoomOut_Tl.to(backgroundRef.current, {scale:1,ease:'none'} );
-    const backgroundToNight_Tl = gsap.timeline( {scrollTrigger: {trigger:nightRef.current,start:'top+=888 top',end:'bottom bottom',scrub:1.2,markers:true},toggleActions: 'play reverse play reverse',} );
-    backgroundToNight_Tl      
-      .fromTo(backgroundRef.current, {x:'0',zIndex:'0'},{x:'-100vw',zIndex:'-1'} )
-      .fromTo(nightRef.current, {x:'100vw',zIndex:'-1'},{x:'0',zIndex:'0'},);
-
-      const nightToDelivery_Tl = gsap.timeline( {scrollTrigger: {trigger:nightRef.current,start:'top+=1778 top',end:'bottom bottom',scrub:1.2,markers:true},toggleActions: 'play reverse play reverse',} );
-      nightToDelivery_Tl
-        .fromTo(nightRef.current, {x:'0',zIndex:'0'},{x:'-100vw',zIndex:'-1'} )
-        .fromTo(deliveryRef.current, {x:'100vw',zIndex:'-1'},{x:'0',zIndex:'0'} );
-    // gsap.to(backgroundRef.current,{
-    //   scrollTrigger:{ trigger: backgroundRef.current, start:'top+=888 top',end:'bottom bottom',scrub:3,markers:true },
-    //   x:'-100vw',y:'0',ease:'none'
-    // });    
-
-    // const nightTl = gsap.timeline({  scrollTrigger: {trigger:nightRef.current,start:'top+=888 top',end:'bottom bottom',scrub:3,markers:true},  });
-    // nightTl
-    //   .fromTo(nightRef.current, {x:'100vw'},{x:'0'} )
-    //   .to(nightRef.current, {x:'-100vw'} );
+    gsap.fromTo(backgroundRef.current,
+      { scale:24.5,transformOrigin:'36.81% 10.4%' },
+      { scale:1,ease:'none',scrollTrigger:{trigger:backgroundRef.current,start:'top top',end:'top center',scrub:1,markers:true} }
+    );
+    gsap.fromTo(mascotBikeRef.current,
+      {x:'-100vw'},{  x:'0',scrollTrigger:{trigger:mascotBikeRef.current,start:"top bottom",end:"top top",scrub:1,markers:true}  }
+    );
+    gsap.fromTo(nightRef.current,
+      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:nightRef.current,start:"top top",end:"top top-=100vh",scrub:1,markers:true}  }
+    );
+    gsap.fromTo(thirdImgRef.current,
+      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:thirdImgRef.current,start:"top top",end:"top top-=100vh",scrub:1,markers:true}  }
+    );
+    gsap.fromTo(mascotBikeRef.current,
+      {x:'0'},
+      { x:'100vw',scrollTrigger:{trigger:thirdImgRef.current,start:"top top-=300vh",end:"bottom+=100vh top",scrub:1,markers:true}  }
+    );
+    gsap.fromTo(deliveryRef.current,
+      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:deliveryRef.current,start:"top top",end:"top top-=100vh",scrub:1,markers:true}  }
+    );
+    gsap.fromTo(tailRef.current,
+      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:tailRef.current,start:"top top",end:"top top-=100vh",scrub:1,markers:true}  }
+    );
+    gsap.fromTo([storeRef.current,mascotRef.current],
+      {x:'-100vw'},{  x:'0',scrollTrigger:{trigger:storeRef.current,start:"top top",end:"top top-=100vh",scrub:1,markers:true}  }
+    );    
+    gsap.fromTo(icecream_snowRef.current,
+      {x:'100vw'},{  x:'0',scrollTrigger:{trigger:icecream_snowRef.current,start:"top top",end:"top top-=100vh",scrub:1,markers:true}  }
+    );
+    
   },[]);
   return(
-    <div style={{ position:'relative',height:'8888888vh' }}>
-      <Navbar />
-      <img ref={backgroundRef} src={backgroundImg} alt="Background" className="background-image"/>        
-      <img ref={nightRef} src={night} alt="night"  className="night-image"/>
-      <img ref={deliveryRef} src={deliveryImg} alt="deliveryImg"  className="delivery-image"/>
+    <div className="main-container">
+      <Navbar />      
+      <img ref={backgroundRef} src={backgroundImg} alt="backgroundImg" className="backgroundImg" />
+      <img ref={mascotBikeRef} src={mascotBike} alt="mascotBike" className="mascotBike" />
+      <img ref={nightRef} src={night} alt="night" className="night" />
+      <img ref={thirdImgRef} src={thirdImg} alt="thirdImg" className="thirdImg" />
+      <img ref={deliveryRef} src={delivery} alt="delivery" className="delivery" />
+      <img ref={tailRef} src={tailImg} alt="tailImg" className="tail" />
+      <img ref={mascotRef} src={storeImg} alt="storeImg" className="store" />
+      <img ref={storeRef} src={mascotLastImg} alt="mascotLastImg" className="mascotLastImg" />
+      <img ref={icecream_snowRef} src={icecream_snow} alt="icecream_snow" className="icecream_snow" />
+      <a href="/icecream-parlor-site/contact"><img src={banner} alt="banner" className="banner" /></a>
     </div>
   );
 
