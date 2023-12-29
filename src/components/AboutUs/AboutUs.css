@@ -1,9 +1,53 @@
-.main{ overflow-x: hidden; height:300vh; }
+/* @media (max-width: 1000px) {
+  .backgroundImg{
+    
+  }
+} */
 
-.imgs{ width: 20vh; position: relative; }
-
-.wide-content{ width: 200vw; height: 10vh; margin-top: 40vh; background-color: lightblue; }
+html,body{ overflow-x: hidden; } 
 
 .backgroundImg{
-  width: 20vh; position: relative;
+  width:100vw; display: block; object-fit: cover; background-size: cover;   
+}
+
+.mascotBike{
+  z-index: 1; width:5vw; left: 38vw; margin-top: 1vh;
+}
+
+.night{
+  width:100vw; display: block; object-fit: cover; background-size: cover; 
+  margin-top: 4vh; 
+}
+
+.thirdImg{
+  width:100vw; display: block; object-fit: cover; background-size: cover; 
+  margin-top: 4vh; 
+}
+
+.delivery{
+  width:100vw; display: block; object-fit: cover; background-size: cover; 
+  margin-top: 4vh; 
+}
+
+.tail{
+  width:100vw; display: block; object-fit: cover; background-size: cover; 
+  margin-top: 4vh; 
+}
+
+.store{
+  z-index: 1; width:8vw; left: 8vw; margin-top: 4vh;
+}
+
+.mascotLastImg{
+  z-index: 1; width:5vw; left: 15vw; margin-top: 1vh;
+}
+
+.icecream_snow{
+  width:100vw; display: block; object-fit: cover; background-size: cover; 
+  margin-top: 1vh; 
+}
+
+.banner{
+  width:34vw; display: block; object-fit: cover; background-size: cover; 
+  margin-top: 0.2vh; left:38vw;
 }

@@ -3,5 +3,6 @@
   z-index:10;
   background-color:#fff;
   padding: 1em;
-  width: 80vw;
+  width: 100vw;
+  overflow-x: hidden;
 }
