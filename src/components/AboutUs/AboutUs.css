@@ -3,3 +3,7 @@
 .imgs{ width: 20vh; position: relative; }
 
 .wide-content{ width: 200vw; height: 10vh; margin-top: 40vh; background-color: lightblue; }
+
+.backgroundImg{
+  width: 20vh; position: relative;
+}
